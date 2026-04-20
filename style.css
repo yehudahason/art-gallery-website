@@ -1,0 +1,83 @@
+:root {
+  /* Neutral */
+  --grey-900: #151515;
+  --grey-700: #444444;
+  --white: #ffffff;
+
+  /* Folksy Gold */
+  --gold-500: #d5966c;
+  --font-display: "Big Shoulders Display", sans-serif;
+  --font-body: "Outfit", sans-serif;
+
+  /* Text 1 (96 → 60) */
+  --text-1: clamp(60px, 6vw, 96px) / 0.9 var(--font-display);
+
+  /* Text 2 (70 → 55) */
+  --text-2: clamp(55px, 5vw, 70px) / 1 var(--font-display);
+
+  /* Text 3 (60 → 50) */
+  --text-3: clamp(50px, 4.5vw, 60px) / 1 var(--font-display);
+
+  /* Text 4 (36 → ~28 inferred) */
+  --text-4: clamp(28px, 3vw, 36px) / 1 var(--font-display);
+
+  /* Text 5 (22 → ~18 inferred) */
+  --text-5: clamp(18px, 2vw, 22px) / 1.4 var(--font-body);
+
+  /* Text 6 (20 → ~16 inferred) */
+  --text-6: clamp(16px, 1.8vw, 20px) / 1 var(--font-display);
+  --text-6-letter: 0.18em;
+
+  /* Text 7 (18 → ~16 inferred) */
+  --text-7: clamp(16px, 1.6vw, 18px) / 1.4 var(--font-body);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+h1 span {
+  font: var(--text-1);
+  display: none;
+}
+
+h1 img {
+  height: clamp(108px, 10vw, 172px);
+}
+p {
+  font: var(--text-7);
+  color: var(--grey-700);
+}
+
+h2 {
+  font: var(--text-3);
+  text-transform: uppercase;
+}
+
+.dark-con {
+  background-color: var(--grey-900);
+  color: var(--white);
+  padding: 2rem;
+}
+.dark-con p {
+  color: var(--white);
+}
+
+footer {
+  background-color: var(--grey-900);
+  color: var(--white);
+  text-align: left;
+  padding: 2rem;
+}
+
+footer p {
+  color: var(--white);
+}
