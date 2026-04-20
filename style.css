@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 :root {
   /* Neutral */
   --grey-900: #151515;
@@ -6,30 +8,33 @@
 
   /* Folksy Gold */
   --gold-500: #d5966c;
-  --font-display: "Big Shoulders Display", sans-serif;
+  --font-display: "Big Shoulders", sans-serif;
   --font-body: "Outfit", sans-serif;
 
-  /* Text 1 (96 → 60) */
-  --text-1: clamp(60px, 6vw, 96px) / 0.9 var(--font-display);
+  /* Preset 1: Black weight (900), Fluid Size, 0.9 Line Height */
+  --font-preset-1:
+    900 clamp(3.75rem, 2.48rem + 5.41vw, 6rem)/0.9 "Big Shoulders", sans-serif;
 
-  /* Text 2 (70 → 55) */
-  --text-2: clamp(55px, 5vw, 70px) / 1 var(--font-display);
+  /* Preset 2: Black weight (900), Fluid Size, 1.0 Line Height */
+  --font-preset-2:
+    900 clamp(3.43rem, 2.38rem + 4.51vw, 4.37rem)/1 "Big Shoulders", sans-serif;
 
-  /* Text 3 (60 → 50) */
-  --text-3: clamp(50px, 4.5vw, 60px) / 1 var(--font-display);
+  /* Preset 3: Black weight (900), Fluid Size, 1.0 Line Height */
+  --font-preset-3:
+    900 clamp(3.12rem, 2.42rem + 3vw, 3.75rem)/1 "Big Shoulders", sans-serif;
 
-  /* Text 4 (36 → ~28 inferred) */
-  --text-4: clamp(28px, 3vw, 36px) / 1 var(--font-display);
+  /* Preset 4: Black weight (900), 36px, 1.0 Line Height */
+  --font-preset-4: 900 2.25rem/1 "Big Shoulders", sans-serif;
 
-  /* Text 5 (22 → ~18 inferred) */
-  --text-5: clamp(18px, 2vw, 22px) / 1.4 var(--font-body);
+  /* Preset 5: Light weight (300), 22px, 1.4 Line Height */
+  --font-preset-5: 300 1.37rem/1.4 "Outfit", sans-serif;
 
-  /* Text 6 (20 → ~16 inferred) */
-  --text-6: clamp(16px, 1.8vw, 20px) / 1 var(--font-display);
-  --text-6-letter: 0.18em;
+  /* Preset 6: ExtraBold (800), 20px, 1.0 Line Height (Spacing must be separate) */
+  --font-preset-6: 800 1.25rem/1 "Big Shoulders", sans-serif;
+  --letter-spacing-6: 3.64px;
 
-  /* Text 7 (18 → ~16 inferred) */
-  --text-7: clamp(16px, 1.6vw, 18px) / 1.4 var(--font-body);
+  /* Preset 7: Light weight (300), 18px, 1.4 Line Height */
+  --font-preset-7: 300 1.12rem/1.4 "Outfit", sans-serif;
 }
 
 * {
@@ -45,7 +50,7 @@ main {
   gap: 6rem;
 }
 h1 span {
-  font: var(--text-1);
+  font: var(--font-preset-1);
   display: none;
 }
 
@@ -53,12 +58,12 @@ h1 img {
   height: clamp(108px, 10vw, 172px);
 }
 p {
-  font: var(--text-7);
+  font: var(--font-preset-7);
   color: var(--grey-700);
 }
 
 h2 {
-  font: var(--text-3);
+  font: var(--font-preset-3);
   text-transform: uppercase;
 }
 
