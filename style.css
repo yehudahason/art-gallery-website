@@ -44,13 +44,19 @@
 }
 
 main {
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
   display: flex;
   flex-direction: column;
 }
 #map {
   height: clamp(500px, 550px, 600px);
   width: 100%;
+}
+.home.hide {
+  display: none;
+}
+.map.hide {
+  display: none;
 }
 h1 span {
   font: var(--font-preset-1);
@@ -79,7 +85,6 @@ h2 {
 .home {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   justify-content: center;
   align-items: center;
 }
@@ -88,12 +93,18 @@ h2 {
   width: 100%;
   height: auto;
 }
+.section1 {
+  margin-bottom: 2rem;
+}
+.section2 {
+  padding-bottom: 0;
+}
 .section1,
 .section2,
 .section3 {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
   padding: 2rem 1rem;
@@ -103,7 +114,7 @@ a.location-con {
   align-items: center;
   text-decoration: none;
   width: 260px;
-  height: 72px;
+  height: auto;
   margin-left: 0;
   margin-right: auto;
 }
@@ -123,20 +134,24 @@ a .location {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1.5rem;
 }
 a .arrow {
   background-color: var(--gold-500);
   width: 56px;
-  height: 100%;
+  padding: 1.25rem;
 }
 a .arrow img {
-  height: 60%;
+  height: 1.75rem;
   width: auto;
 }
 .dark-con {
   background-color: var(--grey-900);
   color: var(--white);
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 .dark-con p {
   color: var(--white);
@@ -146,9 +161,23 @@ footer {
   background-color: var(--grey-900);
   color: var(--white);
   text-align: left;
-  padding: 2rem;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 footer p {
   color: var(--white);
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hero-img {
+    content: url("./img/desktop/image-hero@2x.jpg");
+  }
 }
