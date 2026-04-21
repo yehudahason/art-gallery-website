@@ -49,6 +49,10 @@ main {
   flex-direction: column;
   gap: 6rem;
 }
+#map {
+  height: 400px;
+  width: 500px;
+}
 h1 span {
   font: var(--font-preset-1);
   display: none;
