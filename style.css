@@ -49,10 +49,20 @@ main {
 }
 #map {
   height: clamp(500px, 550px, 600px);
-  width: 100%;
+  width: 100vw;
 }
 .home.hide {
   display: none;
+}
+.map {
+  position: relative;
+}
+
+.map a {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2000;
 }
 .map.hide {
   display: none;
@@ -192,11 +202,11 @@ footer {
 footer p {
   color: var(--white);
 }
-.footer.map {
+.footer.second {
   background-color: var(--gold-500);
   color: var(--grey-900);
 }
-.footer.map p {
+.footer.second p {
   color: var(--grey-900);
 }
 
@@ -204,17 +214,17 @@ footer p {
   display: flex;
   gap: 1rem;
 }
-.map .facebook {
+.second .facebook {
   content: url("./img/fb2.png");
   height: 1.75rem;
   width: 1.75rem;
 }
-.map .instagram {
+.second .instagram {
   content: url("./img/inst2.webp");
   height: 1.75rem;
   width: 1.75rem;
 }
-.map .twitter {
+.second .twitter {
   content: url("./img/twt2.png");
   height: 1.75rem;
   width: 1.75rem;
