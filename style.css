@@ -47,18 +47,23 @@ main {
   padding-bottom: 6rem;
   display: flex;
   flex-direction: column;
-  gap: 6rem;
 }
 #map {
-  height: 400px;
-  width: 500px;
+  height: clamp(500px, 550px, 600px);
+  width: 100%;
 }
 h1 span {
   font: var(--font-preset-1);
   display: none;
+  text-align: left;
 }
-
-h1 img {
+.section1 h1 {
+  margin-left: 0;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+.section1 h1 img {
   height: clamp(108px, 10vw, 172px);
 }
 p {
@@ -71,6 +76,63 @@ h2 {
   text-transform: uppercase;
 }
 
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.home img {
+  width: 100%;
+  height: auto;
+}
+.section1,
+.section2,
+.section3 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+a.location-con {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: 260px;
+  height: 72px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+a span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a .location {
+  background-color: var(--grey-900);
+  font: var(--font-preset-6);
+  text-transform: uppercase;
+  color: var(--white);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a .arrow {
+  background-color: var(--gold-500);
+  width: 56px;
+  height: 100%;
+}
+a .arrow img {
+  height: 60%;
+  width: auto;
+}
 .dark-con {
   background-color: var(--grey-900);
   color: var(--white);
