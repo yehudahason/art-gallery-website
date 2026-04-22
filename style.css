@@ -58,7 +58,7 @@ main {
   /* margin: 0 auto; */
 }
 #map {
-  height: clamp(500px, 550px, 600px);
+  height: clamp(31rem, 35rem, 37.5);
   width: 100%;
 }
 
@@ -172,7 +172,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .container3 {
@@ -262,6 +262,7 @@ a .arrow img {
 }
 
 footer {
+  position: relative;
   background-color: var(--grey-900);
   color: var(--white);
   text-align: left;
@@ -272,6 +273,7 @@ footer {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  min-height: 22rem;
 }
 
 footer p {
@@ -303,6 +305,39 @@ footer p {
   content: url("./img/twt2.png");
   height: 1.75rem;
   width: 1.75rem;
+}
+
+.attribution {
+  font: var(--font-preset-7);
+  position: absolute;
+  bottom: 1px;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 1rem;
+
+  color: burlywood;
+}
+
+/* Links */
+.attribution a {
+  margin: 0 0.25rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(230, 82, 28);
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.attribution a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Separator dot */
+.separator {
+  margin: 0 0.5rem;
+  opacity: 0.6;
 }
 
 @media (min-width: 768px) {
@@ -389,6 +424,7 @@ footer p {
     gap: 4rem;
     justify-content: center;
     align-items: center;
+    min-height: 15rem;
   }
 }
 
