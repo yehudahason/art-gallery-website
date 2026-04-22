@@ -283,6 +283,7 @@ footer {
 
 footer p {
   color: var(--white);
+  max-width: 20rem;
 }
 .footer.second {
   background-color: var(--gold-500);
@@ -458,7 +459,7 @@ footer p {
   }
   footer {
     flex-direction: row;
-    gap: 4rem;
+    gap: 9rem;
     justify-content: center;
     align-items: center;
     min-height: 15rem;
@@ -527,5 +528,8 @@ footer p {
     content: url("./img/desktop/image-grid-2.jpg");
     max-height: 720px;
     width: 635px;
+  }
+  footer p {
+    max-width: 25rem;
   }
 }
