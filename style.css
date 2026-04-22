@@ -48,12 +48,12 @@ body {
   justify-content: center;
   margin: 0 auto;
   /* padding: 0 32px; */
-  max-width: 1440px;
+  max-width: 90rem;
 }
 main {
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
+  max-width: 90rem;
   justify-content: center;
   /* margin: 0 auto; */
 }
@@ -276,7 +276,7 @@ footer {
   flex-direction: column;
   gap: 2rem;
   width: 100%;
-  max-width: 1440px;
+  max-width: 90rem;
   margin: 0 auto;
   min-height: 22rem;
 }
@@ -364,8 +364,11 @@ footer p {
   margin: 0 0.5rem;
   opacity: 0.6;
 }
-
-@media (min-width: 768px) {
+.footer-logo {
+  height: 2.5rem;
+  width: 10rem;
+}
+@media (min-width: 48rem) {
   .hero-con {
     flex-direction: row;
   }
@@ -462,7 +465,7 @@ footer p {
   }
 }
 
-@media (min-width: 1180px) {
+@media (min-width: 73rem) {
   .black-bg {
     display: block;
     height: clamp(43rem, 47rem, 50rem);
