@@ -58,7 +58,7 @@ main {
   /* margin: 0 auto; */
 }
 #map {
-  height: clamp(31rem, 35rem, 37.5);
+  height: clamp(31rem, 35rem, 37.5rem);
   width: 100%;
 }
 
@@ -242,6 +242,10 @@ a .arrow {
 a:hover .location {
   background-color: var(--gold-500);
 }
+a:focus {
+  outline: 3px solid var(--gold-500);
+  outline-offset: 3px;
+}
 a:hover .arrow {
   background-color: var(--grey-900);
 }
@@ -290,6 +294,26 @@ footer p {
 .links {
   display: flex;
   gap: 1rem;
+}
+.links a {
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.links a:hover {
+  background-color: var(--gold-500);
+  color: var(--grey-900);
+}
+
+.second .links a:hover {
+  background-color: var(--white);
+  color: var(--gold-500);
+}
+.second .links a:focus {
+  outline: 2px solid var(--grey-900);
+  outline-offset: 1px;
 }
 .second .facebook {
   content: url("./img/fb2.png");
