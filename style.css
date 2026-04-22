@@ -174,10 +174,6 @@ h2 {
   justify-content: center;
   gap: 16px;
 }
-.container2 img {
-  height: 25rem;
-  width: 25rem;
-}
 
 .container3 {
   display: flex;
@@ -242,6 +238,12 @@ a .arrow {
   background-color: var(--gold-500);
   width: 56px;
   padding: 1.25rem;
+}
+a:hover .location {
+  background-color: var(--gold-500);
+}
+a:hover .arrow {
+  background-color: var(--grey-900);
 }
 a .arrow img {
   height: 1.75rem;
@@ -326,6 +328,14 @@ footer p {
   }
   .section2 {
     padding-top: 10rem;
+    padding-bottom: 0.5rem;
+  }
+  .section3 {
+    padding-top: 0.5rem;
+  }
+  .container2 img {
+    height: 25rem;
+    width: 25rem;
   }
   .container2 {
     gap: 4rem;
@@ -343,7 +353,7 @@ footer p {
     width: clamp(690px, 800px, 1100px);
   }
   .container3 .column {
-    width: 280px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -367,8 +377,18 @@ footer p {
   }
   .container3 .grid2 {
     content: url("./img/tablet/image-grid-2.jpg");
-    max-height: 720px;
-    width: 400px;
+    max-height: 710px;
+    width: 420px;
+  }
+  .container3 {
+    gap: 2rem;
+  }
+
+  footer {
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -403,6 +423,9 @@ footer p {
     top: 25%;
     left: -61%;
     z-index: 4;
+  }
+  .container2 {
+    gap: 10rem;
   }
   .container2 img {
     content: url("./img/desktop/image-grid-1@2x.jpg");
