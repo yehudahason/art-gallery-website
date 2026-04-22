@@ -150,7 +150,7 @@ h2 {
   display: none;
 }
 .img-con .float-logo-dark {
-  height: 100px;
+  height: 172px;
   display: none;
   width: auto;
 }
@@ -291,6 +291,10 @@ footer p {
     margin-left: 0;
     margin-right: auto;
   }
+  .img-con {
+    height: clamp(43rem, 47rem, 50rem);
+    width: clamp(27rem, 30rem, 33rem);
+  }
   .section1 {
     position: absolute;
     left: 25rem;
@@ -320,15 +324,15 @@ footer p {
   .black-bg .logo-light {
     position: absolute;
     top: 25%;
-    left: 8rem;
-    height: 100px;
+    right: -48%;
+    height: 172px;
     width: auto;
   }
   .img-con .float-logo-dark {
     position: absolute;
     display: block;
     top: 25%;
-    left: -9.25rem;
+    left: -61%;
     z-index: 4;
   }
 }
