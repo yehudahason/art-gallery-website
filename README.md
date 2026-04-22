@@ -8,8 +8,8 @@ This is a solution to the [Art gallery website challenge on Frontend Mentor](htt
 
 ### Links
 
-- My solution at: [GitHub Pages](https://your-solution-url.com)
+- My solution at: [GitHub Pages](https://yehudahason.github.io/art-gallery-website/)
 
 ## Author
 
-- Frontend Mentor - [Yehuda Hason](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [Yehuda Hason](https://www.frontendmentor.io/profile/yehudahason)
