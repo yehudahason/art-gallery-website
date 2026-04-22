@@ -312,7 +312,8 @@ footer p {
 
   .section1 {
     top: 25%;
-    left: 43rem;
+    left: 50rem;
+    width: 20rem;
   }
   .section1 h1 {
     display: none;
