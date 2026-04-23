@@ -408,7 +408,7 @@ footer p {
     width: 25rem;
   }
   .container2 {
-    gap: 4rem;
+    gap: 2rem;
     flex-direction: row-reverse;
   }
   .text2 {
@@ -451,7 +451,7 @@ footer p {
     width: 420px;
   }
   .container3 {
-    gap: 2rem;
+    gap: 1rem;
   }
   .location {
     flex-direction: row;
@@ -515,7 +515,7 @@ footer p {
     z-index: 4;
   }
   .container2 {
-    gap: 10rem;
+    gap: 9.5rem;
   }
   .container2 img {
     content: url("./img/desktop/image-grid-1@2x.jpg");
