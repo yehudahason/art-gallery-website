@@ -138,11 +138,11 @@ h2 {
   padding-bottom: 6rem;
 }
 .hero-con {
-  position: relative;
   display: flex;
+  flex-direction: column;
+  position: relative;
   gap: 0;
   width: 100%;
-  flex-direction: column;
 }
 .black-bg {
   background-color: var(--grey-900);
@@ -151,7 +151,6 @@ h2 {
 .img-con .float-logo-dark {
   height: 172px;
   display: none;
-  width: auto;
 }
 .hero-img {
   position: relative;
@@ -368,24 +367,33 @@ footer p {
   height: 2.5rem;
   width: 10rem;
 }
+
 @media (min-width: 48rem) {
   .hero-con {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .black-bg {
+    /* display: block; */
   }
   .hero-con .hero-img {
     content: url("./img/desktop/image-hero@2x.jpg");
     height: clamp(43rem, 47rem, 50rem);
-    width: clamp(27rem, 30rem, 33rem);
+    /* width: clamp(27rem, 30rem, 33rem); */
+    width: 100%;
     margin-left: 0;
     margin-right: auto;
+    object-fit: cover;
+    object-position: center;
   }
   .img-con {
     height: clamp(43rem, 47rem, 50rem);
-    width: clamp(27rem, 30rem, 33rem);
+    /* width: clamp(27rem, 30rem, 33rem); */
+    width: 100%;
   }
   .section1 {
     position: absolute;
-    left: 25rem;
+    left: 42%;
     top: 20%;
     width: 22rem;
   }
@@ -466,15 +474,25 @@ footer p {
 }
 
 @media (min-width: 73rem) {
+  .hero-con {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   .black-bg {
     display: block;
     height: clamp(43rem, 47rem, 50rem);
-    width: clamp(20rem, 24rem, 27rem);
+    /* width: clamp(20rem, 24rem, 27rem); */
+    width: 100%;
+  }
+  .hero-con .hero-img {
+    width: 100%;
+  }
+  .img-con {
+    width: 100%;
   }
 
   .section1 {
     top: 25%;
-    left: 50rem;
+    left: 63%;
     width: 20rem;
   }
   .section1 h1 {
