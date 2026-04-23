@@ -33,7 +33,7 @@
   --letter-spacing-6: 3.64px;
 
   /* Preset 7: Light weight (300), 18px, 1.4 Line Height */
-  --font-preset-7: 300 1.12rem/1.4 "Outfit", sans-serif;
+  --font-preset-7: 300 1.25rem/1.4 "Outfit", sans-serif;
 }
 
 * {
@@ -373,9 +373,7 @@ footer p {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .black-bg {
-    /* display: block; */
-  }
+
   .hero-con .hero-img {
     content: url("./img/desktop/image-hero@2x.jpg");
     height: clamp(43rem, 47rem, 50rem);
