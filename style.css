@@ -489,9 +489,9 @@ footer p {
   }
 
   .section1 {
-    top: 25%;
+    top: 19%;
     left: 63%;
-    width: 20rem;
+    width: 22rem;
   }
   .section1 h1 {
     display: none;
@@ -502,14 +502,14 @@ footer p {
   }
   .black-bg .logo-light {
     position: absolute;
-    top: 25%;
+    top: 24%;
     right: -39%;
     height: 172px;
   }
   .img-con .float-logo-dark {
     position: absolute;
     display: block;
-    top: 25%;
+    top: 24%;
     left: -61%;
     z-index: 4;
   }
