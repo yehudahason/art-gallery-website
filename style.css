@@ -201,6 +201,7 @@ h2 {
 .location h3 {
   font: var(--font-preset-2);
   text-transform: uppercase;
+  min-width: 24rem;
 }
 .location h4 {
   color: var(--gold-500);
