@@ -198,7 +198,7 @@ h2 {
 .location p {
   color: var(--white);
 }
-.location h3 {
+.location h1 {
   font: var(--font-preset-2);
   text-transform: uppercase;
 }
