@@ -3,10 +3,7 @@
 var map = L.map("map").setView([41.481469, -71.310429], 15);
 
 // 2. Add the OpenStreetMap tiles
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  attribution:
-    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-}).addTo(map);
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
 
 // 3. Add a marker for 99 King Street
 L.marker([41.481469, -71.310429])
